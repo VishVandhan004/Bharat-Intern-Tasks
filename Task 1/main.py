@@ -48,7 +48,7 @@ import pandas as pd
 import pickle
 
 app = Flask(__name__)
-data = pd.read_csv('final_dataset.csv')
+data = pd.read_csv("final_dataset.csv")
 pipe = pickle.load(open("RidgeModel.pkl", 'rb'))
 
 @app.route('/')
